@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <!-- card -->
+  <rect x="0" y="0" width="760" height="420" rx="14" fill="#0d1117"/>
+  <rect x="0.5" y="0.5" width="759" height="419" rx="13.5" fill="none" stroke="#30363d"/>
+  <!-- title bar -->
+  <rect x="0" y="0" width="760" height="40" rx="14" fill="#161b22"/>
+  <rect x="0" y="26" width="760" height="14" fill="#161b22"/>
+  <circle cx="24" cy="20" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="20" r="6" fill="#ffbd2e"/>
+  <circle cx="64" cy="20" r="6" fill="#27c93f"/>
+  <text x="380" y="25" text-anchor="middle" fill="#8b949e" font-size="13">claude — personas skill</text>
+  <line x1="0" y1="40" x2="760" y2="40" stroke="#30363d"/>
+
+  <!-- user prompt -->
+  <text x="24" y="76" font-size="14.5">
+    <tspan fill="#3fb950">❯ </tspan><tspan fill="#c9d1d9">be the critical-researcher and review this strategy</tspan>
+  </text>
+
+  <!-- profile line -->
+  <text x="24" y="112" font-size="13">
+    <tspan fill="#58a6ff">critical-researcher</tspan><tspan fill="#6e7681">  ·  stance=challenging · verification=demanding · initiative=ask-first</tspan>
+  </text>
+  <line x1="24" y1="128" x2="736" y2="128" stroke="#21262d"/>
+
+  <!-- findings -->
+  <text x="24" y="162" font-size="14" fill="#c9d1d9">
+    <tspan fill="#f0883e">Evidence</tspan>  “40% lift” = 1 pilot, 3-week window  →  anecdote, not trend
+  </text>
+  <text x="24" y="196" font-size="14" fill="#c9d1d9">
+    <tspan fill="#f0883e">Assumption</tspan>  the whole plan rests on: pilot’s ticket mix = everyone’s
+  </text>
+  <text x="24" y="230" font-size="14" fill="#c9d1d9">
+    <tspan fill="#f0883e">Verdict</tspan>  <tspan fill="#e3b341">LOW confidence</tspan> it generalizes.  Not “no” — not yet earned.
+  </text>
+  <text x="24" y="264" font-size="14" fill="#c9d1d9">
+    <tspan fill="#f0883e">To settle</tspan>  a cohort held at the old price over the same window
+  </text>
+
+  <!-- contrast note -->
+  <rect x="24" y="292" width="712" height="58" rx="8" fill="#161b22" stroke="#30363d"/>
+  <text x="40" y="317" font-size="12.5" fill="#8b949e">A plain agent summarizes and agrees. This one tiers the evidence, isolates the</text>
+  <text x="40" y="336" font-size="12.5" fill="#8b949e">load-bearing assumption, and refuses to fake a clean yes — the mindset, not the tone.</text>
+
+  <!-- tagline -->
+  <text x="380" y="392" text-anchor="middle" font-size="13">
+    <tspan fill="#3fb950">approach flexes</tspan><tspan fill="#6e7681">  ·  </tspan><tspan fill="#58a6ff">integrity holds</tspan>
+  </text>
+</svg>

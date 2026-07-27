@@ -9,6 +9,12 @@ Built for scenarios where agents act as **AI employees**, each holding a role wi
 a working style suited to it — a research type that challenges every idea before
 it proves true, a sales type that never dead-ends a client but finds a workaround.
 
+<p align="center">
+  <img src="assets/demo.svg" alt="The critical-researcher profile reviewing a strategy claim: it tiers the evidence, isolates the load-bearing assumption, and returns a confidence-qualified verdict instead of agreeing." width="720">
+</p>
+
+<p align="center"><em>Illustrative — the mindset (evidence-tiering, challenge, confidence) shows up in the work, not just the tone.</em></p>
+
 ## The spine
 
 **Approach flexes, integrity holds.**
