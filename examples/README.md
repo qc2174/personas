@@ -24,7 +24,8 @@ Then spawn it by name (e.g. *"have the critical-researcher review this strategy
 doc"*), or let Claude Code pick it up from its `description`.
 
 **Make your own:** this file follows the template in
-[`../SKILL.md`](../SKILL.md) (§ "Bake it into a subagent") — capability first, the
-operating profile second, then a conflict rule and a fit/integrity note. Swap in
-any profile from [`../references/preset-library.md`](../references/preset-library.md)
-or compose one with [`../references/operating-dimensions.md`](../references/operating-dimensions.md).
+[`SKILL.md`](../skills/personas/SKILL.md) (§ "Bake it into a subagent") — capability
+first, the operating profile second, then a conflict rule and a fit/integrity note.
+Swap in any profile from
+[`preset-library.md`](../skills/personas/references/preset-library.md) or compose
+one with [`operating-dimensions.md`](../skills/personas/references/operating-dimensions.md).

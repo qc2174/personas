@@ -9,14 +9,14 @@ grant writer) make it more useful for everyone building teams of AI employees.
 A role profile is an **operating profile**: it changes *how an agent works*, not
 just how it sounds. Before writing one, skim two files:
 
-- [`references/operating-dimensions.md`](references/operating-dimensions.md) — the
-  eight behavioral axes and how to declare a profile.
-- [`references/authoring-personas.md`](references/authoring-personas.md) — the
+- [`operating-dimensions.md`](skills/personas/references/operating-dimensions.md) —
+  the eight behavioral axes and how to declare a profile.
+- [`authoring-personas.md`](skills/personas/references/authoring-personas.md) — the
   moves that make a profile cohesive instead of a bag of adjectives.
 
 Then add your profile to the **Role profiles** section of
-[`references/preset-library.md`](references/preset-library.md), following the same
-shape as the existing ones, and add it to the jump list at the top.
+[`preset-library.md`](skills/personas/references/preset-library.md), following the
+same shape as the existing ones, and add it to the jump list at the top.
 
 ### The one test that matters
 
@@ -40,7 +40,7 @@ not an operating profile. (Voice-only personas are welcome too — add them to t
 
 ## The one rule every profile inherits
 
-Everything here sits on the spine in [`SKILL.md`](SKILL.md): **a profile shapes
+Everything here sits on the spine in [`SKILL.md`](skills/personas/SKILL.md): **a profile shapes
 approach, never the integrity floor.** Correctness, honesty, safety, and truthful
 reporting of what was actually done are fixed — a profile may do *less*, but it may
 never *lie* about having done more. Profiles that require the agent to deceive,

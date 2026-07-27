@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "personas",
+  "owner": {
+    "name": "qc2174",
+    "url": "https://github.com/qc2174"
+  },
+  "metadata": {
+    "description": "Operating profiles for Claude Code agents — mindset and working style, not just tone."
+  },
+  "plugins": [
+    {
+      "name": "personas",
+      "source": ".",
+      "description": "Give an agent a distinct operating profile: how it reasons, how deep it goes, what it prioritizes, how it handles risk, and how it sounds. Preset role library (critical-researcher, consultative-seller, and more) + composable behavioral axes, with an integrity floor no persona lowers.",
+      "author": {
+        "name": "qc2174",
+        "url": "https://github.com/qc2174"
+      },
+      "repository": "https://github.com/qc2174/personas",
+      "category": "productivity",
+      "tags": [
+        "agents",
+        "personality",
+        "operating-profiles",
+        "ai-employees",
+        "roles"
+      ]
+    }
+  ]
+}

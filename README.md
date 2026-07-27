@@ -10,7 +10,7 @@ a working style suited to it — a research type that challenges every idea befo
 it proves true, a sales type that never dead-ends a client but finds a workaround.
 
 <p align="center">
-  <img src="assets/demo.svg" alt="The critical-researcher profile reviewing a strategy claim: it tiers the evidence, isolates the load-bearing assumption, and returns a confidence-qualified verdict instead of agreeing." width="720">
+  <img src="skills/personas/assets/demo.svg" alt="The critical-researcher profile reviewing a strategy claim: it tiers the evidence, isolates the load-bearing assumption, and returns a confidence-qualified verdict instead of agreeing." width="720">
 </p>
 
 <p align="center"><em>Illustrative — the mindset (evidence-tiering, challenge, confidence) shows up in the work, not just the tone.</em></p>
@@ -47,40 +47,61 @@ makes it safe to give an autonomous agent a strong personality.
 
 ## Install
 
-```bash
-# Global (all projects)
-git clone https://github.com/qc2174/personas ~/.claude/skills/personas
+### Option 1 — plugin marketplace (recommended)
 
-# Or per-project
-git clone https://github.com/qc2174/personas .claude/skills/personas
+In Claude Code:
+
+```
+/plugin marketplace add qc2174/personas
+/plugin install personas@personas
+/reload-plugins
+```
+
+Updates land automatically as the repo evolves — refresh with `/plugin marketplace update`.
+
+### Option 2 — clone as a skill
+
+```bash
+git clone https://github.com/qc2174/personas
+ln -s "$PWD/personas/skills/personas" ~/.claude/skills/personas   # global
 ```
 
 ## Use
 
-Ask in plain language:
+The most reliable way to give an agent a lasting personality is to **bake it into
+a subagent** — the persona lives in the agent's system prompt, always on:
+
+- "Make me a due-diligence agent that challenges every claim before accepting it."
+  → writes a `.claude/agents/<name>.md` (see [`examples/agents/`](examples/agents/)).
+
+You can also adopt one for the current session:
 
 - "Be the critical researcher and review this strategy doc."
 - "Give this agent a sales type — great people skills, never a flat no."
-- "Make me a due-diligence agent that challenges every claim before accepting it."
 - "Spin up a team: a skeptical analyst, a warm client-facing rep, and an operator."
 
-The skill triggers on any request to shape *how* an agent works or talks — even
-without the word "persona."
+> **Note on triggering.** Adopting a persona is something Claude can do inline, so
+> it won't always *auto-consult* this skill from a vague request. For dependable
+> results, invoke it explicitly (`/personas`), name a preset, or use the
+> bake-into-a-subagent path above — that needs no triggering at all.
 
 ## Structure
 
 ```
 personas/
-├── SKILL.md                        # the spine + how to apply a profile
-├── references/
-│   ├── operating-dimensions.md     # the 8 behavioral axes (the vocabulary)
-│   ├── preset-library.md           # role profiles + voice presets
-│   └── authoring-personas.md       # how to compose / remix your own
-├── examples/
-│   └── agents/critical-researcher.md   # a ready-to-copy Mode 2 subagent
-├── assets/
-│   ├── persona-template.md         # fill-in-the-blanks starter
-│   └── demo.svg
+├── .claude-plugin/
+│   ├── marketplace.json            # makes this repo an installable marketplace
+│   └── plugin.json                 # the plugin manifest
+├── skills/personas/
+│   ├── SKILL.md                    # the spine + how to apply a profile
+│   ├── references/
+│   │   ├── operating-dimensions.md # the 8 behavioral axes (the vocabulary)
+│   │   ├── preset-library.md       # role profiles + voice presets
+│   │   └── authoring-personas.md   # how to compose / remix your own
+│   └── assets/
+│       ├── persona-template.md     # fill-in-the-blanks starter
+│       └── demo.svg
+├── examples/agents/                # ready-to-copy Mode 2 subagents
 └── CONTRIBUTING.md                 # how to add a role profile
 ```
 
