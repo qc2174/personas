@@ -34,8 +34,10 @@ makes it safe to give an autonomous agent a strong personality.
 ## What's in the box
 
 - **Role profiles** — full operating profiles that change *how work gets done*:
-  `critical-researcher`, `consultative-seller`, with more to come. Each declares
-  its behavioral axes, a conflict rule, and a fit-to-task note.
+  `critical-researcher`, `consultative-seller`, `operations-lead`,
+  `customer-support`, `compliance-reviewer`, `data-analyst`, `technical-writer`,
+  `security-reviewer`. Each declares its behavioral axes, a conflict rule, and a
+  fit-to-task note.
 - **Voice presets** — lighter personas that change only how the agent *sounds*:
   grumpy staff engineer, hype beast, zen mentor, noir detective, and more.
 - **An axis vocabulary** (`operating-dimensions.md`) — eight behavioral dimensions
@@ -74,8 +76,12 @@ personas/
 │   ├── operating-dimensions.md     # the 8 behavioral axes (the vocabulary)
 │   ├── preset-library.md           # role profiles + voice presets
 │   └── authoring-personas.md       # how to compose / remix your own
-└── assets/
-    └── persona-template.md         # fill-in-the-blanks starter
+├── examples/
+│   └── agents/critical-researcher.md   # a ready-to-copy Mode 2 subagent
+├── assets/
+│   ├── persona-template.md         # fill-in-the-blanks starter
+│   └── demo.svg
+└── CONTRIBUTING.md                 # how to add a role profile
 ```
 
 ## Design note
@@ -86,6 +92,11 @@ compliance audit) is a real hazard. Two things keep it safe: the integrity floor
 that no profile lowers, and **fit-to-task** — every role profile declares what it
 suits and what it must escalate rather than improvise. For a team of AI employees,
 that fit note is the contract an orchestrator uses to assign work.
+
+## Contributing
+
+New role profiles are especially welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
+The one bar: a role profile has to change the *work product*, not just the wording.
 
 ## License
 
