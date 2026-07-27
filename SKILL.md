@@ -14,7 +14,10 @@ description: >-
   a preset by name; or is assembling a team of AI employees / digital coworkers
   with distinct roles. Reach for it even when the user doesn't say "persona" — any
   request to shape *how* an agent works or talks, as opposed to what task it does,
-  is this skill.
+  is this skill. Do NOT use it for writing character content meant for humans (a
+  novel's villain, a staff bio, a standalone sales script), for wiring task
+  mechanics (test runners, schedulers, standup automations), or for trivial
+  one-off format tweaks like "be more concise."
 ---
 
 # Personas
