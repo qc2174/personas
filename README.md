@@ -41,10 +41,10 @@ makes it safe to give an autonomous agent a strong personality.
 
 ```bash
 # Global (all projects)
-git clone https://github.com/<you>/personas ~/.claude/skills/personas
+git clone https://github.com/qc2174/personas ~/.claude/skills/personas
 
 # Or per-project
-git clone https://github.com/<you>/personas .claude/skills/personas
+git clone https://github.com/qc2174/personas .claude/skills/personas
 ```
 
 ## Use
